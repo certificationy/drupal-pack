@@ -1,9 +1,48 @@
 category: Cache
 questions:
     -
-        question: 'How do you nullify one or more tags in the Drupal 8 cache?'
+        question: 'How do you invalidate one or more tags in the Drupal 8 cache?'
         answers:
             - {value: CacheTagsInvalidator::invalidateTags(['node:5']),      correct: true}
             - {value: CacheTagsInvalidator::invalidateTags('node:5'),        correct: false}
-
-
+            - {value: CacheTagsInvalidator::flushTags(['node:5']),           correct: false}
+    -
+        question: "In a render array, choice the correct code snippet to set a cache invalidation strategy ?"
+        answers:
+            -
+              correct: true
+              value: |
+                [
+                  // ...
+                  '#cache': [
+                    'max-age': 60,
+                    'tags': ['node:1', 'node:2']
+                  ]
+                ]
+            -
+              correct: false
+              value: |
+                [
+                  // ...
+                  '#cache': [
+                    'max-age': 60,
+                    'invalidateTags': ['node:1', 'node:2']
+                  ]
+                ]
+            -
+              correct: false
+              value: |
+                [
+                  // ...
+                  '#cache': [
+                    'max-age': 60,
+                    'cache-tags': ['node:1', 'node:2']
+                  ]
+                ]
+    -
+        question: "Which cache context doesn't exist in a default installation ?"
+        answers:
+            - {value: 'user',       correct: false}
+            - {value: 'url',        correct: false}
+            - {value: 'no_cache',   correct: true}
+            - {value: 'url.path',   correct: false}

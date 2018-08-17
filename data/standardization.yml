@@ -23,7 +23,7 @@ questions:
         question: 'What is a contrib module?'
         answers:
             - {value: "A module where one or more top developer gave a contribution",          correct: false}
-            - {value: "A freely usable  module furnished by the community",                    correct: true}
+            - {value: "A freely usable module furnished by the community",                    correct: true}
 
     -
         question: 'What is a block?'
