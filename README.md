@@ -18,7 +18,7 @@ certification website/training tool.
 As usual, use composer to install the library:
 
 ```bash
-git clone https://github.com/certificationy/certificationy-cli.git
+composer create-project certificationy/certificationy-cli
 cd certificationy-cli
 composer require "wengerk/certificationy-drupal-pack"
 ```
