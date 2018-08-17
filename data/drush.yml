@@ -18,7 +18,7 @@ questions:
         answers:
             - {value: Rebuild a Drupal 8 site and clear all its caches, correct: true}
             - {value: Reload the configuration and clear all its caches, correct: false}
-            - {value: Nothing, this command doesn't exists, correct: false}
+            - {value: "Nothing, this command doesn't exists", correct: false}
     -
         question: 'What is the Drush command to load the configuration from a config directory?'
         answers:

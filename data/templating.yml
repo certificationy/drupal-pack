@@ -31,7 +31,7 @@ questions:
         question: 'How can we use .tpl file in Drupal8?'
         answers:
             - {value: .tpl files have been removed in Drupal8,                                                                            correct: false}
-            - {value: hey can be used as template files, like in Drupal7,                                                                 correct: false}
+            - {value: "hey can be used as template files, like in Drupal7",                                                                 correct: false}
             - {value: .tpl files can be bounded to .twig files to provide usefull informations about variabiles and methods,              correct: true}
     -
         question: 'When can you use the command  % extends "base.html" %} for?'
@@ -48,9 +48,9 @@ questions:
     -
         question: 'What includes the tag block in twig?'
         answers:
-            - {value: A page block chosen among header, footer and sidebar,                                         correct: false}
-            - {value: The code portion that has to replace the same tag block defined in the extended template,     correct: true}
-            - {value: A page section built by a specific controller,                                                correct: false}
+            - {value: "A page block chosen among header, footer and sidebar",                                         correct: false}
+            - {value: The code portion that has to replace the same tag block defined in the extended template,      correct: true}
+            - {value: A page section built by a specific controller,                                                 correct: false}
     -
         question: 'What is the best approach to use if I want to use a specific css for node--123.html.twig?'
         answers:
