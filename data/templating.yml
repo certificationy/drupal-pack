@@ -70,8 +70,8 @@ questions:
             - {value: "{{ set varName = 'exemple' }}",              correct: false}
             - {value: "{{ var varName = 'exemple' }}",              correct: false}
             - {value: "{% set varName = 'exemple' %}",              correct: true}
-            - {value: "{% var myVariable = 'example' %}",   correct: false}
-            - {value: "{= set varName = 'exemple' =}",                  correct: false}
-            - {value: "{= var varName = 'exemple' =}",                  correct: false}
-            - {value: '{# set varName #}',                  correct: false}
-            - {value: '{# var varName #}',                  correct: false}
+            - {value: "{% var myVariable = 'example' %}",           correct: false}
+            - {value: "{= set varName = 'exemple' =}",              correct: false}
+            - {value: "{= var varName = 'exemple' =}",              correct: false}
+            - {value: '{# set varName #}',                          correct: false}
+            - {value: '{# var varName #}',                          correct: false}
