@@ -1,0 +1,8 @@
+category: Database
+questions:
+    -
+        question: 'Where can I find useful information about the database connection?'
+        answers:
+            - {value: sites/default/settings.php,      correct: true}
+            - {value: core/lib/Drupal.php,             correct: false}
+            - {value: sites/development.services.yml,  correct: false}

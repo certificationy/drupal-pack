@@ -1,0 +1,9 @@
+category: Cache
+questions:
+    -
+        question: 'How do you nullify one or more tags in the Drupal 8 cache?'
+        answers:
+            - {value: CacheTagsInvalidator::invalidateTags(['node:5']),      correct: true}
+            - {value: CacheTagsInvalidator::invalidateTags('node:5'),        correct: false}
+
+

@@ -1,0 +1,41 @@
+category: Routing
+questions:
+    -
+        question: 'What is the file format to declare routes?'
+        answers:
+            - {value: XML,             correct: false}
+            - {value: YAML,            correct: true}
+            - {value: XML and YAML,    correct: false}
+    -
+        question: 'Four specials routing parameters are available in Drupal 8:'
+        answers:
+            - {value: "_controller, _title, _access, _form",                        correct: false}
+            - {value: "_controller, _custom_title, _access, _user_is_logged_in",    correct: false}
+            - {value: "_controller, _callback_title, _custom_access, _form",        correct: true}
+    -
+        question: 'What is the format for a path parameter?'
+        answers:
+            - {value: "path: '/node/%node%'",      correct: false}
+            - {value: "path: '/node/{node}'",      correct: true}
+            - {value: "path: '/node/%'",           correct: false}
+            - {value: "path: '/node/{{ node }}'",  correct: false}
+    -
+        question: 'How to ensure that a route is accessed via the POST verb?'
+        answers:
+            - {value: "methods: POST",      correct: true}
+            - {value: "verb: POST",         correct: false}
+            - {value: "POST: TRUE",         correct: false}
+    -
+        question: 'How to ensure that a route is uncacheable?'
+        answers:
+            - {value: "no_cache",       correct: true}
+            - {value: "cache: FALSE",   correct: false}
+            - {value: "cache: no",      correct: false}
+    -
+        question: |
+                    What is wrong with the following path?
+                    path: /{node}/view
+        answers:
+            - {value: "the `{node}` parameter is a reserved word",       correct: false}
+            - {value: "the path must finish with a trailing slash",      correct: false}
+            - {value: "the first item of the path must not be dynamic",  correct: true}

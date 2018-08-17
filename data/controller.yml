@@ -1,0 +1,59 @@
+category: Controllers
+questions:
+    -
+        question: 'How to perform a redirection on example.org in a controller?'
+        answers:
+            - {value: return $this->redirect($this->generateUrl('http://www.example.org')), correct: false}
+            - {value: return $this->redirectUrl('http://www.example.org'),                  correct: false}
+            - {value: return $this->redirect('http://www.example.org'),                     correct: true}
+            - {value: return $this->generateUrl('http://www.example.org'),                  correct: false}
+    -
+        question: 'Which method(s) can be used to retrieve a service in a controller?'
+        answers:
+            - {value: return $this->get('service.name'),                 correct: true}
+            - {value: return $this->getContainer('service.name'),        correct: false}
+            - {value: return $this->getContainer()->get('service.name'), correct: false}
+            - {value: return $this->container->get('service.name'),      correct: true}
+    -
+        question: 'Which class may be extended by your controllers?'
+        answers:
+            - {value: Symfony\Bundle\FrameworkBundle\Controller\Controller,    correct: true}
+            - {value: Symfony\Component\FrameworkBundle\Controller\Controller, correct: false}
+            - {value: Symfony\Bundle\HttpBundle\Controller\Controller,         correct: false}
+            - {value: Symfony\Component\MvcBundle\Controller\Controller,       correct: false}
+    -
+        question: 'Which of these annotations can be used in a controller?'
+        answers:
+            - {value: '@Cache',          correct: true}
+            - {value: '@ParamConverter', correct: true}
+            - {value: '@Security',       correct: true}
+            - {value: '@Post',           correct: false}
+    -
+        question: 'Which of these response objects does not exists?'
+        answers:
+            - {value: XmlResponse,        correct: true}
+            - {value: JsonResponse,       correct: false}
+            - {value: BinaryFileResponse, correct: false}
+            - {value: RedirectResponse,   correct: false}
+    -
+        question: 'Which class will you use to convert an action parameter?'
+        answers:
+            - {value: ParamConverter,     correct: true}
+            - {value: ParameterConverter, correct: false}
+            - {value: Converter,          correct: false}
+            - {value: ObjectConverter,    correct: false}
+    -
+        question: 'Which controller/action allows to render a template without a specific controller?'
+        answers:
+            - {value: FrameworkBundle:Controller:template, correct: false}
+            - {value: FrameworkBundle:Template:action,     correct: false}
+            - {value: FrameworkBundle:Template:render,     correct: false}
+            - {value: FrameworkBundle:Template:template,   correct: true}
+    -
+        question: 'Which of these variables are available in Controllers?'
+        answers:
+            - {value: $_controller,  correct: true}
+            - {value: $_route,       correct: true}
+            - {value: $request,      correct: true}
+            - {value: $_locale,      correct: true}
+            - {value: $_format,      correct: true}

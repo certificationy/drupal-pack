@@ -1,0 +1,27 @@
+category: Drush
+questions:
+    -
+        question: 'What is Drush ?'
+        answers:
+            - {value: 'Drush is a core module', correct: false}
+            - {value: 'Drush is a contrib module', correct: false}
+            - {value: 'Drush is a command line tool', correct: true}
+    -
+        question: 'What is the Drush command to clear cache?'
+        answers:
+            - {value: drush cache-clear,      correct: true}
+            - {value: drush cache-clean,      correct: false}
+            - {value: drush cc,               correct: true}
+            - {value: drush cache-invalidate, correct: false}
+    -
+        question: 'What does this command `drush cr`?'
+        answers:
+            - {value: Rebuild a Drupal 8 site and clear all its caches, correct: true}
+            - {value: Reload the configuration and clear all its caches, correct: false}
+            - {value: Nothing, this command doesn't exists, correct: false}
+    -
+        question: 'What is the Drush command to load the configuration from a config directory?'
+        answers:
+            - {value: drush config-load, correct: false}
+            - {value: drush config-import, correct: true}
+            - {value: drush config-up, correct: false}

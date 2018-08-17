@@ -1,0 +1,45 @@
+category: Standardization
+questions:
+    -
+        question: 'What is a Drupal 8 module?'
+        answers:
+            - {value: Specific content block on the website page,                                       correct: false}
+            - {value: An application portion that includes a precise set of functionalities,            correct: true}
+            - {value: A Symfony bundle,                                                                 correct: false}
+    -
+        question: 'Why do you need composer?'
+        answers:
+            - {value: "It's a tool that allows to create a page with a drag&drop mechanism",                                    correct: false}
+            - {value: "It's a package manager",                                                                                    correct: true}
+            - {value: "It's a builder, which means that can transform the application code into a filled makefile",                correct: false}
+    -
+        question: 'Which of those modules has been integrated in the Drupal 8 core?'
+        answers:
+            - {value: "Panel",          correct: false}
+            - {value: "Pathauto",       correct: false}
+            - {value: "Views",          correct: true}
+
+    -
+        question: 'What is a contrib module?'
+        answers:
+            - {value: "A module where one or more top developer gave a contribution",          correct: false}
+            - {value: "A freely usable  module furnished by the community",                    correct: true}
+
+    -
+        question: 'What is a block?'
+        answers:
+            - {value: "It's a node",                                     correct: false}
+            - {value: "It's a code portion reusable in a controller",    correct: false}
+            - {value: "It's a code portion renderable in a page",        correct: true}
+    -
+        question: 'What does .info.yml file contain?'
+        answers:
+            - {value: "It includes metadata and information to use during the module integration",                                                                               correct: true}
+            - {value: "It includes information about the module author",                                                                                                         correct: false}
+            - {value: "It includes information about functionalities implemented by the module that need to be approved from the community when a contrib module gets released", correct: false}
+    -
+        question: 'What namespace are for?'
+        answers:
+            - {value: "Defining a precise scope for classes and implemented methods in our code",            correct: true}
+            - {value: "Defining naming convention to use within a project",                                  correct: false}
+            - {value: "Defining a module and all the global variable that can be recalled within it",        correct: false}

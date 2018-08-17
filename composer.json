@@ -1,0 +1,21 @@
+{
+  "name": "wengerk/certificationy-drupal-pack",
+  "type": "certificationy-pack",
+  "description": "A series of questions to prepare for the Drupal 8 certification",
+  "keywords": ["certificationy", "Drupal", "Drupal 8", "certification", "test", "exam"],
+  "homepage": "http://github.com/wengerk/certificationy-drupal-pack",
+  "license": "MIT",
+  "authors": [
+    {
+    "name": "Antistatique",
+    "role": "Development Agency"
+    },
+    {
+    "name": "Kevin Wenger",
+    "role": "Developer at Antistatique SA"
+    }
+  ],
+  "require-dev": {
+    "certificationy/yaml-linter": "v1.0.1"
+  }
+}
