@@ -24,14 +24,14 @@ questions:
     -
         question: "When can we use the command {% include 'sidebar.html' %}?"
         answers:
-            - {value: When we want to reach variable environment to the .twig file we refers to,                                                                                       correct: false}
-            - {value: When we want to include a template within another one, in this way the included template will be redirected in the position when the inclusion happened,         correct: true}
-            - {value: When we want to recall functionalities from an outside .php file,                                                                                                correct: false}
+            - {value: When we want to reach variable environment to the .twig file we refers to,                                                                                         correct: false}
+            - {value: "When we want to include a template within another one, in this way the included template will be redirected in the position when the inclusion happened",         correct: true}
+            - {value: When we want to recall functionalities from an outside .php file,                                                                                                  correct: false}
     -
         question: 'How can we use .tpl file in Drupal8?'
         answers:
             - {value: .tpl files have been removed in Drupal8,                                                                            correct: false}
-            - {value: "hey can be used as template files, like in Drupal7",                                                                 correct: false}
+            - {value: "hey can be used as template files, like in Drupal7",                                                               correct: false}
             - {value: .tpl files can be bounded to .twig files to provide usefull informations about variabiles and methods,              correct: true}
     -
         question: 'When can you use the command  % extends "base.html" %} for?'
